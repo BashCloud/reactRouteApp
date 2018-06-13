@@ -8,7 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Tooltip from '@material-ui/core/Tooltip';
 
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 class Dashboard extends React.PureComponent {
@@ -19,7 +19,7 @@ class Dashboard extends React.PureComponent {
                     <CardContent>
                         <h2>Welcome User</h2>
                     </CardContent>
-                        <NavLink to="/profile"> <Button >Profile</Button></NavLink>
+                        <Link to="/profile" className="noLink"> <Button >Profile</Button></Link>
                         <Tooltip title="More content to be added soon..."><Button >Know More</Button></Tooltip>
                         <Button onClick={this.props.Logout}>Logout</Button>
                     <br /><br />
