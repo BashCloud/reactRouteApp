@@ -8,6 +8,7 @@ import Header from "./Header";
 import Dashboard from "./Dashboard";
 import Profile from "./Profile";
 import Login from "./Login";
+import Page2 from "./Page2";
 // import Counter from "./Counter";
 
 import { Switch, Route, Redirect } from 'react-router-dom'
@@ -41,6 +42,7 @@ class App extends Component {
             <Switch>
               <PrivateRoute exact path='/' component={Dashboard} />
               <PrivateRoute path='/profile' component={Profile} />
+              <PrivateRoute path='/about' component={Page2} />
               <Route path='/login' component={Login} />
             </Switch>
         </div>

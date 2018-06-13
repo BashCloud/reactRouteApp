@@ -20,6 +20,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
 import StarIcon from '@material-ui/icons/Star';
 import Home from '@material-ui/icons/Home';
+import Info from '@material-ui/icons/Info';
 import Chat from '@material-ui/icons/Chat';
 import Phone from '@material-ui/icons/Phone';
 import Camera from '@material-ui/icons/Camera';
@@ -117,6 +118,10 @@ class Header extends React.Component {
               <NavLink to="/" className="noLink"><ListItem button>
                 <ListItemIcon><Home /></ListItemIcon>
                 <ListItemText inset primary="Dashboard" />
+              </ListItem></NavLink>
+              <NavLink to="/about" className="noLink"><ListItem button>
+                <ListItemIcon><Info /></ListItemIcon>
+                <ListItemText inset primary="Know More" />
               </ListItem></NavLink>
               <Divider />
 

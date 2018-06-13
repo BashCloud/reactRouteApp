@@ -19,9 +19,11 @@ class Dashboard extends React.PureComponent {
                     <CardContent>
                         <h2>Welcome User</h2>
                     </CardContent>
-                        <Link to="/profile" className="noLink"> <Button >Profile</Button></Link>
-                        <Tooltip title="More content to be added soon..."><Button >Know More</Button></Tooltip>
-                        <Button onClick={this.props.Logout}>Logout</Button>
+                    <Link to="/profile" className="noLink"> <Button >Profile</Button></Link>
+                    <Tooltip title="More content to be added soon...">
+                        <Link to="/about" className="noLink"><Button >Know More</Button></Link>
+                    </Tooltip>
+                    <Button onClick={this.props.Logout}>Logout</Button>
                     <br /><br />
                 </Card>
             </div>
